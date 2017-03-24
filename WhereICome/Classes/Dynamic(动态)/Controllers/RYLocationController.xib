@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RYLocationController">
+            <connections>
+                <outlet property="mapView" destination="9hu-UP-9Gi" id="I69-qG-Ztd"/>
+                <outlet property="tableView" destination="uR5-BX-Abg" id="Y5K-E2-YJN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9hu-UP-9Gi">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="kYu-y3-n7o"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="epS-tL-wjn"/>
+                    </connections>
+                </mapView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uR5-BX-Abg">
+                    <rect key="frame" x="0.0" y="300" width="320" height="268"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mPD-hP-Ydx"/>
+                        <outlet property="delegate" destination="-1" id="jT9-fU-ihm"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9hu-UP-9Gi" secondAttribute="trailing" id="5Cn-dw-lEv"/>
+                <constraint firstAttribute="bottom" secondItem="9hu-UP-9Gi" secondAttribute="bottom" id="K9P-JJ-igL"/>
+                <constraint firstItem="uR5-BX-Abg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XUf-Uc-AjC"/>
+                <constraint firstAttribute="bottom" secondItem="uR5-BX-Abg" secondAttribute="bottom" id="aJ0-ov-vls"/>
+                <constraint firstItem="uR5-BX-Abg" firstAttribute="top" secondItem="9hu-UP-9Gi" secondAttribute="bottom" id="egw-mP-00E"/>
+                <constraint firstItem="9hu-UP-9Gi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ul3-PI-cSq"/>
+                <constraint firstItem="9hu-UP-9Gi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x8F-fk-Rv0"/>
+                <constraint firstAttribute="trailing" secondItem="uR5-BX-Abg" secondAttribute="trailing" id="zVA-O2-sMs"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="K9P-JJ-igL"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="215" y="311"/>
+        </view>
+    </objects>
+</document>

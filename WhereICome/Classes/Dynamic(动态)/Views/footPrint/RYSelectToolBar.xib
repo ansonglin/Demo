@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RYSelectToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKr-Yd-gkA" userLabel="camera">
+                    <rect key="frame" x="15" y="0.0" width="30" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="JLH-Dg-7Iw"/>
+                    </constraints>
+                    <state key="normal" image="camera">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g52-jp-O8n" userLabel="video">
+                    <rect key="frame" x="55" y="0.0" width="30" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="fDF-7O-qYb"/>
+                    </constraints>
+                    <state key="normal" image="video">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Oy-1Q-smh" userLabel="face">
+                    <rect key="frame" x="105" y="0.0" width="30" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="7j1-cd-aTV"/>
+                    </constraints>
+                    <state key="normal" image="face">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9Oy-1Q-smh" secondAttribute="bottom" id="0hc-kB-SAc"/>
+                <constraint firstItem="9Oy-1Q-smh" firstAttribute="leading" secondItem="g52-jp-O8n" secondAttribute="trailing" constant="20" id="Aln-bb-NcI"/>
+                <constraint firstItem="g52-jp-O8n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MyK-Ec-jOb"/>
+                <constraint firstAttribute="bottom" secondItem="nKr-Yd-gkA" secondAttribute="bottom" id="RUL-57-lSo"/>
+                <constraint firstItem="nKr-Yd-gkA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="f3H-pz-QMi"/>
+                <constraint firstItem="g52-jp-O8n" firstAttribute="leading" secondItem="nKr-Yd-gkA" secondAttribute="trailing" constant="10" id="fst-Op-paJ"/>
+                <constraint firstItem="nKr-Yd-gkA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p2I-r1-vpb"/>
+                <constraint firstItem="9Oy-1Q-smh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rX9-46-aHi"/>
+                <constraint firstAttribute="bottom" secondItem="g52-jp-O8n" secondAttribute="bottom" id="uiP-CP-NZu"/>
+            </constraints>
+            <connections>
+                <outlet property="cameraBtn" destination="nKr-Yd-gkA" id="DF0-oI-wrJ"/>
+                <outlet property="faceBtn" destination="9Oy-1Q-smh" id="J6e-Dn-D0T"/>
+                <outlet property="videoBtn" destination="g52-jp-O8n" id="C0u-5Y-Ho8"/>
+            </connections>
+            <point key="canvasLocation" x="349" y="122"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera" width="24" height="24"/>
+        <image name="face" width="22" height="22"/>
+        <image name="video" width="24" height="24"/>
+    </resources>
+</document>

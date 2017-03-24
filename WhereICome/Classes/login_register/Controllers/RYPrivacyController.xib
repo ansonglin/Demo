@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RYPrivacyController">
+            <connections>
+                <outlet property="agreeBtn" destination="oTu-HJ-nAY" id="bgD-Ks-FeU"/>
+                <outlet property="dissAgreeBtn" destination="zum-WU-go1" id="4mN-Nn-jzw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTu-HJ-nAY">
+                    <rect key="frame" x="10" y="302" width="300" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="jMV-1y-daY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="同意">
+                        <color key="titleColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="agreeBtnClick:" destination="-1" eventType="touchUpInside" id="bgx-dk-7Gi"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入whereIcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wW-GS-QJh">
+                    <rect key="frame" x="10" y="60" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="VDt-1g-Qhc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zum-WU-go1">
+                    <rect key="frame" x="10" y="357" width="300" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="8Sp-ZP-pyy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="不同意">
+                        <color key="titleColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dissAgreeBtnClick:" destination="-1" eventType="touchUpInside" id="WxU-dH-eLM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注册即表示你同意我们的&lt;&lt;WhereICome软件许可及服务协议&gt;&gt;，且已通读隐私政策，包括Cookies使用政策。你可能会收到来自WhereICome的短信通知，并可随时退订。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfY-Gh-F69">
+                    <rect key="frame" x="18" y="125" width="284" height="111"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="284" id="Tfb-y3-Hhg"/>
+                        <constraint firstAttribute="width" constant="284" id="Yvj-g6-Apb"/>
+                        <constraint firstAttribute="height" constant="111" id="aAc-TN-mtD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oTu-HJ-nAY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="2Sa-ew-uMa"/>
+                <constraint firstAttribute="centerX" secondItem="gfY-Gh-F69" secondAttribute="centerX" id="9gE-vB-zBQ"/>
+                <constraint firstItem="gfY-Gh-F69" firstAttribute="top" secondItem="0wW-GS-QJh" secondAttribute="bottom" constant="55" id="CzZ-qY-rx3"/>
+                <constraint firstAttribute="trailing" secondItem="oTu-HJ-nAY" secondAttribute="trailing" constant="10" id="E4P-yq-YZd"/>
+                <constraint firstItem="0wW-GS-QJh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="H5M-Mt-NnG"/>
+                <constraint firstItem="oTu-HJ-nAY" firstAttribute="top" secondItem="gfY-Gh-F69" secondAttribute="bottom" constant="46" id="He3-dK-GbA"/>
+                <constraint firstAttribute="trailing" secondItem="gfY-Gh-F69" secondAttribute="trailing" constant="50" id="J4F-aY-Zjp"/>
+                <constraint firstAttribute="trailing" secondItem="gfY-Gh-F69" secondAttribute="trailing" constant="18" id="NDf-RA-DBf"/>
+                <constraint firstItem="0wW-GS-QJh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="PBD-jX-Atz"/>
+                <constraint firstItem="zum-WU-go1" firstAttribute="top" secondItem="oTu-HJ-nAY" secondAttribute="bottom" constant="10" id="Qn5-eS-y3i"/>
+                <constraint firstAttribute="trailing" secondItem="0wW-GS-QJh" secondAttribute="trailing" constant="10" id="Vc4-Xq-h8h"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gfY-Gh-F69" secondAttribute="trailing" constant="-870" id="XL1-yC-YLx"/>
+                <constraint firstItem="zum-WU-go1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="aa5-Ee-UbH"/>
+                <constraint firstItem="gfY-Gh-F69" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="buk-gi-Eab"/>
+                <constraint firstItem="gfY-Gh-F69" firstAttribute="top" secondItem="0wW-GS-QJh" secondAttribute="bottom" constant="33" id="g4c-2E-PVR"/>
+                <constraint firstItem="gfY-Gh-F69" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="ob8-7N-Sag"/>
+                <constraint firstAttribute="trailing" secondItem="zum-WU-go1" secondAttribute="trailing" constant="10" id="pEH-QR-XrG"/>
+                <constraint firstItem="gfY-Gh-F69" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="yo1-CE-NPW"/>
+                <constraint firstItem="gfY-Gh-F69" firstAttribute="top" secondItem="0wW-GS-QJh" secondAttribute="bottom" constant="35" id="z9z-d4-Red"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9gE-vB-zBQ"/>
+                    <exclude reference="CzZ-qY-rx3"/>
+                    <exclude reference="J4F-aY-Zjp"/>
+                    <exclude reference="buk-gi-Eab"/>
+                    <exclude reference="g4c-2E-PVR"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

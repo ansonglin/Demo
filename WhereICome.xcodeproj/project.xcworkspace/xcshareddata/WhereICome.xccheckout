@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6EA46C9D-7F28-4FF6-85F2-784EB34935D2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WhereICome</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E49EBED2F2E234CE54258BE155753E62348D5D60</key>
+		<string>ssh://192.168.1.105/Users/mkq/Documents/whereIcome.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WhereICome.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E49EBED2F2E234CE54258BE155753E62348D5D60</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://192.168.1.105/Users/mkq/Documents/whereIcome.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E49EBED2F2E234CE54258BE155753E62348D5D60</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E49EBED2F2E234CE54258BE155753E62348D5D60</string>
+			<key>IDESourceControlWCCName</key>
+			<string>whereIcome</string>
+		</dict>
+	</array>
+</dict>
+</plist>
